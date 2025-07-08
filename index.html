@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dktelecom ltd - High Speed Internet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#007BFF', // Brighter blue for better contrast
+                '50': '#E6F2FF',
+                '100': '#BEDAFF',
+                '200': '#94C1FF',
+                '300': '#6BA9FF',
+                '400': '#4290FF',
+                '500': '#1978FF',
+                '600': '#006AE6',
+                '700': '#0058BF',
+                '800': '#004599',
+                '900': '#003273',
+              },
+              secondary: '#FF6B00',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+              'spinner': 'spin 1s linear infinite',
+              'scroll': 'scroll 40s linear infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/client": "https://esm.sh/react-dom@^19.1.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@^19.1.0/jsx-runtime",
+    "@google/genai": "https://esm.sh/@google/genai@^1.8.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased">
+    <div id="root"></div>
+</body>
+</html>
